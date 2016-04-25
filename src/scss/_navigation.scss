@@ -1,0 +1,121 @@
+/* css relativo alla vecchia navigazione, quella a 2 livelli
+.nav {  //position relative all UL esterno, altrimenti non va nulla
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+}
+
+.nav__item {  // metto in fila i LI del primo livello
+  display: inline-block;
+}
+
+.nav__link {
+  display: block;
+}
+
+.dropdown__area {  // nascondo il secondo UL, posizione assoluta fer farlo stare in riga sotto
+  display: none;
+  position: absolute;
+  top: 100%;
+  list-style: none;
+  background: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+.dropdown__trigger:hover > ul {  // compare il secondo UL su hover (opzionale, probabilmente lo faccio in js)
+  display: inherit;
+}
+
+.dropdown__link {
+  display: block;
+  padding: 15px 5px;
+  margin: 0 5px;
+}
+
+.dropdown__item {
+  display: inline-block;
+  font-weight: bold;
+  font-size: x-small;
+}
+   fine css vecchia navigazione*/
+
+.nav__container {
+  @include breakpoint($desktop) {
+    position: static;
+  }
+  position: fixed;
+  top: 0px;
+  min-width: 100%;
+}
+
+.nav {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: white;
+}
+
+.nav__item {
+  @include breakpoint($desktop) {
+    display: inline-block;
+  }
+}
+
+.nav__link {
+  @include breakpoint($tablet) {
+    width: 50%;
+    float: left;
+  }
+  @include breakpoint($desktop) {
+    width: auto;
+    float: none;
+    padding: 0 0 3px 0;
+    margin-right: 15px;
+  }
+  display: block;
+  color: $colore-testo;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-family: 'LatoRegular', Arial, sans-serif;
+  padding: 10px;
+}
+
+.nav__item:last-child .nav__link {
+  @include breakpoint($desktop) {
+    margin-right: 0;
+  }
+}
+
+
+.nav__link:after {
+  @include breakpoint($desktop) {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    border-radius: 30px;
+    background: transparent;
+    transition: all .5s ease;
+  }
+}
+
+.nav__link:hover:after {
+  @include breakpoint($desktop) {
+    width: 100%;
+    background: $colore-testo;
+  }
+}
+
+
+
+
+
+
+
+
+
+

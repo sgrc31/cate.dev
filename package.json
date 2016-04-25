@@ -1,0 +1,32 @@
+{
+  "name": "cate.dev",
+  "version": "0.0.0",
+  "description": "remake sito cate",
+  "main": "index.js",
+  "dependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "fontello-cli": "^0.4.0",
+    "normalize.css": "^4.0.0",
+    "reload": "^0.7.0",
+    "rerun-script": "^0.6.0",
+    "susy": "^2.2.12"
+  },
+  "devDependencies": {},
+  "watches": {
+    "html": "src/html/*",
+    "css": "src/scss/*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "html": "cp src/html/* dist/",
+    "css": "scss src/scss/style.scss dist/style.css",
+    "cp:font": "cp -r src/fonts dist/",
+    "cp:img": "cp -r src/img dist/",
+    "fontello": "fontello-cli install --config src/fontello.json --css src/scss --font src/fonts && mv src/scss/icone.css src/scss/_icone.scss && rm src/scss/*.css",
+    "postfontello": "./node_modules/.bin/npm run cp:font",
+    "clear": "rm -rvf dist/*",
+    "watch": "rerun-script"
+  },
+  "author": "",
+  "license": "ISC"
+}

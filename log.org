@@ -1,0 +1,2 @@
+#+STARTUP:    showall noindent logdone showstars oddeven
+
