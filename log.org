@@ -1,2 +1,4 @@
 #+STARTUP:    showall noindent logdone showstars oddeven
 
+- usa unslider.js per la home
+- impara magit???

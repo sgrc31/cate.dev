@@ -80,3 +80,46 @@ body {
 }
 
 
+
+//-------------
+// FOTO
+//------------
+.img__photo {
+  margin: 0 auto 45px auto;
+}
+
+.img__separatore {
+  margin: 0 auto 45px auto;
+}
+
+
+
+
+//---------
+// ABOUT
+//---------
+.about__block {
+  @include breakpoint($tablet) {
+    @include container();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.about__title {
+  @include breakpoint($tablet) {
+    @include span(6 of 12);
+  }
+  width: 100%;
+  margin: 0;
+}
+
+.about__list {
+  @include breakpoint($tablet) {
+    @include span(6 of 12 last);
+  }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
