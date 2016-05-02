@@ -58,6 +58,14 @@ body {
   margin-top: 30px;
 }
 
+
+//------------
+// FOOTER
+//------------
+.footer {
+  margin: 50px 3px 3px 3px;
+}
+
 .icon__link {
   text-decoration: none;
   color: $colore-testo;
@@ -105,6 +113,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+  margin-bottom: 35px;
 }
 
 .about__title {
@@ -113,6 +122,9 @@ body {
   }
   width: 100%;
   margin: 0;
+  padding-left: 170px;
+  color: $colore-testo;
+  background: url("img/cuore.png") no-repeat 140px 60%;
 }
 
 .about__list {
