@@ -4,9 +4,13 @@
   "description": "remake sito cate",
   "main": "index.js",
   "dependencies": {
+    "autoprefixer": "^6.3.6",
     "breakpoint-sass": "^2.7.0",
+    "cssnano": "^3.5.2",
     "fontello-cli": "^0.4.0",
     "normalize.css": "^4.0.0",
+    "postcss": "^5.0.21",
+    "postcss-cli": "^2.5.2",
     "reload": "^0.7.0",
     "rerun-script": "^0.6.0",
     "susy": "^2.2.12"
@@ -14,15 +18,16 @@
   "devDependencies": {},
   "watches": {
     "html": "src/html/*",
-    "css": "src/scss/*"
+    "css:make": "src/scss/*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "html": "cp src/html/* dist/",
-    "css": "scss src/scss/style.scss dist/style.css",
+      "css:make": "scss src/scss/style.scss dist/style.css",
+      "postcss:make": "postcss -u autoprefixer -u cssnano -r dist/style.css",
     "cp:font": "cp -r src/fonts dist/",
-      "cp:img": "cp -r src/img dist/",
-      "cp:js": "cp -r src/js dist/",
+    "cp:img": "cp -r src/img dist/",
+    "cp:js": "cp -r src/js dist/",
     "fontello": "fontello-cli install --config src/fontello.json --css src/scss --font src/fonts && mv src/scss/icone.css src/scss/_icone.scss && rm src/scss/*.css",
     "postfontello": "./node_modules/.bin/npm run cp:font",
     "clear": "rm -rvf dist/*",

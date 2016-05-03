@@ -1,4 +1,6 @@
 #+STARTUP:    showall noindent logdone showstars oddeven
 
+- imposta npm script per autoprefixer
+- imposta npm script per css minifying
 - usa unslider.js per la home
 - impara magit???
