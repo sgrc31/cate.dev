@@ -41,7 +41,7 @@ $(function(){
 
 //Dall'esempio precedente, vediamo se risco a fara la navigazione
 
-$(document).ready(function(){
+$(window).load(function(){
 
     //registro posizione iniziale della navigazione
     var stickyHeaderTop = $('.nav__container').offset().top;
