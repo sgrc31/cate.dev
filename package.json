@@ -13,7 +13,8 @@
     "postcss-cli": "^2.5.2",
     "reload": "^0.7.0",
     "rerun-script": "^0.6.0",
-    "susy": "^2.2.12"
+    "susy": "^2.2.12",
+    "unslider": "github:idiot/unslider"
   },
   "devDependencies": {},
   "watches": {
@@ -23,8 +24,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "html": "cp src/html/* dist/",
-      "css:make": "scss src/scss/style.scss dist/style.css",
-      "postcss:make": "postcss -u autoprefixer -u cssnano -r dist/style.css",
+    "css:make": "scss src/scss/style.scss dist/style.css",
+    "postcss:make": "postcss -u autoprefixer -u cssnano -r dist/style.css",
     "cp:font": "cp -r src/fonts dist/",
     "cp:img": "cp -r src/img dist/",
     "cp:js": "cp -r src/js dist/",
