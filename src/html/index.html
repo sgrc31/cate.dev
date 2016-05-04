@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/nav.js"></script>
   </head>
   <body>
@@ -22,36 +23,55 @@
     <!-- Add your site or application content here -->
     <div class="wrapper">
 
-     <!-- 
-      <div class="nav__trigger">
-        menu
-      </div>
-      <ul class="nav">
-        <li class="nav__item"><a class="nav__link" href="">home</a></li>
-        <li class="nav__item dropdown__trigger">
-          <a class="nav__link" href="">shots</a>
-          <ul class="dropdown__area">
-            <li class="dropdown__item"><a class="dropdown__link" href="">fashion & beauty</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">commercial</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">love</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">celebrities</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">on stage</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">music</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">portrait</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">inspiration</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">products</a></li>
-          </ul>
-        </li>
-        <li class="nav__item"><a class="nav__link" href="">about</a></li>
-      </ul> -->
+      <!-- 
+           <div class="nav__trigger">
+           menu
+           </div>
+           <ul class="nav">
+           <li class="nav__item"><a class="nav__link" href="">home</a></li>
+           <li class="nav__item dropdown__trigger">
+           <a class="nav__link" href="">shots</a>
+           <ul class="dropdown__area">
+           <li class="dropdown__item"><a class="dropdown__link" href="">fashion & beauty</a></li>
+           <li class="dropdown__item"><a class="dropdown__link" href="">commercial</a></li>
+           <li class="dropdown__item"><a class="dropdown__link" href="">love</a></li>
+           <li class="dropdown__item"><a class="dropdown__link" href="">celebrities</a></li>
+           <li class="dropdown__item"><a class="dropdown__link" href="">on stage</a></li>
+           <li class="dropdown__item"><a class="dropdown__link" href="">music</a></li>
+           <li class="dropdown__item"><a class="dropdown__link" href="">portrait</a></li>
+           <li class="dropdown__item"><a class="dropdown__link" href="">inspiration</a></li>
+           <li class="dropdown__item"><a class="dropdown__link" href="">products</a></li>
+           </ul>
+           </li>
+           <li class="nav__item"><a class="nav__link" href="">about</a></li>
+           </ul> -->
 
       
       <div class="content">
+        
         <img src="img/logo.png" srcset="img/logo.png 800w" sizes="(min-width: 800px) 800px, 100vw" alt="logo" class="logo__img img--fluid"/>
+
+
+        <div class="home__slider">
+          <div>
+            <img class="img__photo img--fluid" alt="" src="img/fashion0101.jpg"/>
+          </div>             
+          <div>              
+            <img class="img__photo img--fluid" class="img__photo img--fluidalt="" src="img/fashion0102.jpg"/>
+          </div>             
+          <div>              
+            <img class="img__photo img--fluid" alt="" src="img/fashion0103.jpg"/>
+          </div>             
+          <div>              
+            <img class="img__photo img--fluid" alt="" src="img/fashion0104.jpg"/>
+          </div>
+        </div>
+
+        
         <div class="nav__container">
           <div class="nav__trigger">menu trigger</div>
           <ul class="nav cf">
-            <li class="nav__item"><a class="nav__link" href="index.html">fashion & beauty</a></li>
+            <li class="nav__item"><a class="nav__link" href="fashion.html">fashion & beauty</a></li>
             <li class="nav__item"><a class="nav__link" href="">commercial</a></li>
             <li class="nav__item"><a class="nav__link" href="">love</a></li>
             <li class="nav__item"><a class="nav__link" href="">celebrities</a></li>
@@ -66,68 +86,36 @@
         </div>
 
 
-        <div class="about__block">
-          <h4 class="about__title">me</h4>
-          <ul class="about__list">
-            <li>A lens is between me and the being.</li>
-            <li>I love experiences authentic and true moments and, within my power, I'd like to ward them from extinction by collecting them in an image</li>
-          </ul>
-        </div>
-        <div class="about__block">
-          <h4 class="about__title">references</h4>
-          <ul class="about__list">
-            <li>Sky Italia</li>
-            <li>The Times</li>
-            <li>Sunday Times</li>
-            <li>Time Out Berlin</li>
-            <li>Rolling Stone Italia</li>
-            <li>Rockol</li>
-            <li>Exberliner</li>
-            <li>Indieberlin</li>
-            <li>Il Mucchio Selvaggio</li>
-            <li>Rockerilla</li>
-          </ul>
-        </div>
-        <div class="about__block">
-          <h4 class="about__title">impressum</h4>
-          <ul class="about__list">
-            <li>Caterina Gili</li>
-            <li>Zeitzer Str. 3</li>
-            <li>12055 Berlin, Germany</li>
-            <li>+49 (0) 1768 780 24 22</li>
-            <li>caterina.gili@gmail.com</li>
-            <li>UST-ID: DE3130701135</li>
-          </ul>
+        <div class="footer">
+          <span class="footer__impressum">Caterina Gili Berlin Germany - UST-ID: DE3130701135</span>
+          <span class="footer__social">
+            <a class="icon__link icon__link--facebook" href="https://www.facebook.com/caterinagiliphotographer"><i class="icon-facebook-rect"></i></a>
+            <a class="icon__link icon__link--twitter" href="https://twitter.com/caterinagili"><i class="icon-twitter-bird"></i></a>
+            <a class="icon__link icon__link--tumblr" href="http://caterinagiliphotography.tumblr.com/"><i class="icon-tumblr-rect"></i></a>
+          </span>
         </div>
 
-
-        
-      </div>
-
-
-      <div class="footer">
-        <span class="footer__impressum">Caterina Gili Berlin Germany - UST-ID: DE3130701135</span>
-        <span class="footer__social">
-          <a class="icon__link icon__link--facebook" href="https://www.facebook.com/caterinagiliphotographer"><i class="icon-facebook-rect"></i></a>
-          <a class="icon__link icon__link--twitter" href="https://twitter.com/caterinagili"><i class="icon-twitter-bird"></i></a>
-          <a class="icon__link icon__link--tumblr" href="http://caterinagiliphotography.tumblr.com/"><i class="icon-tumblr-rect"></i></a>
-        </span>
       </div>
 
       
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
-     window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-     ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+     $(document).ready(function(){
+         $(".home__slider").slick({
+             autoplay: true,
+             autoplaySpeed: '2500',
+             arrows: false,
+             fade: true,
+             pauseOnHover: false,
+             speed: '700',
+         });
+     });
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    
+
+
   </body>
 </html>

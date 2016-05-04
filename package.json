@@ -13,8 +13,8 @@
     "postcss-cli": "^2.5.2",
     "reload": "^0.7.0",
     "rerun-script": "^0.6.0",
-    "susy": "^2.2.12",
-    "unslider": "github:idiot/unslider"
+    "slick-carousel": "^1.5.9",
+    "susy": "^2.2.12"
   },
   "devDependencies": {},
   "watches": {
@@ -26,6 +26,7 @@
     "html": "cp src/html/* dist/",
     "css:make": "scss src/scss/style.scss dist/style.css",
     "postcss:make": "postcss -u autoprefixer -u cssnano -r dist/style.css",
+    "slick": "cp node_modules/slick-carousel/slick/slick.scss src/scss/_slick.scss && cp node_modules/slick-carousel/slick/slick.min.js src/js/",
     "cp:font": "cp -r src/fonts dist/",
     "cp:img": "cp -r src/img dist/",
     "cp:js": "cp -r src/js dist/",
