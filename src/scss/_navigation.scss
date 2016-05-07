@@ -95,8 +95,17 @@
   color: $colore-testo;
   text-decoration: none;
   font-variant: small-caps;
+  //text-transform: uppercase;
   font-family: 'LatoRegular', Arial, sans-serif;
   padding: 10px;
+}
+
+//media query speciale per far sì che le small caps
+//abbiano la stessa grandezza in chrome
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .nav__link {
+    font-size: larger;
+  }
 }
 
 .nav__item:last-child .nav__link {

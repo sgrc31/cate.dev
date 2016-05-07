@@ -1,6 +1,10 @@
 #+STARTUP:    showall noindent logdone showstars oddeven
 
-- imposta npm script per autoprefixer
-- imposta npm script per css minifying
-- usa unslider.js per la home
-- impara magit???
+* TODO impara magit???
+
+* TODO sistema navigazione per mobile
+
+* DONE trova modo di evitare lo scroll della navigazione su a about e index
+  CLOSED: [2016-05-07 Sat 12:17]
+
+* TODO crea uno script di build esaustivo

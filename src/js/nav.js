@@ -45,9 +45,9 @@ $(window).load(function(){
 
     //registro posizione iniziale della navigazione
     var stickyHeaderTop = $('.nav__container').offset().top;
-
+    
     //eseguo lo script solo sul desktop, per non sminchiarmi la navigazione sul mobile
-    if( $(window).width() >= 980 ) { 
+    if( $(window).width() >= 980 && $(document).height() >= 2 * $(window).height() ) { 
 
     $(window).scroll(function() {
         if( $(window).scrollTop() > stickyHeaderTop ) {

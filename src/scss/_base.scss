@@ -58,6 +58,13 @@ body {
   margin-top: 30px;
 }
 
+.logo__hr {
+  display: block;
+  width: 55%;
+  height: 3px;
+  border: 0px;
+  background: linear-gradient(to right, rgba(60, 60, 60, 0), rgba(60, 60, 60, 0.75), rgba(60, 60, 60, 0));
+}
 
 //------------
 // FOOTER
@@ -117,21 +124,29 @@ body {
 }
 
 .about__title {
+  color: $colore-testo;
+  text-align: center;
+  background: url("img/cuore.png") no-repeat 30px 69%;
   @include breakpoint($tablet) {
     @include span(6 of 12);
+    text-align: left;
+    padding-left: 25px;
+    background: url("img/cuore.png") no-repeat 5px 69%;
   }
-  width: 100%;
-  margin: 0;
-  padding-left: 170px;
-  color: $colore-testo;
-  background: url("img/cuore.png") no-repeat 140px 60%;
+  @include breakpoint($desktop) {
+    @include span (6 of 12);
+    padding-left: 190px;
+    background: url("img/cuore.png") no-repeat 160px 69%;
+  }
 }
 
 .about__list {
   @include breakpoint($tablet) {
     @include span(6 of 12 last);
+    text-align: left;
   }
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
