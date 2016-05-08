@@ -66,6 +66,22 @@ body {
   background: linear-gradient(to right, rgba(60, 60, 60, 0), rgba(60, 60, 60, 0.75), rgba(60, 60, 60, 0));
 }
 
+.logo__subtitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+//  overflow: scroll;
+}
+
+.logo__subtitle span {
+  display: inline-block;
+  @include breakpoint($tablet) {
+    border-top: 3px solid #666;
+    padding: 10px 110px 0 110px;
+  }
+}
+
 //------------
 // FOOTER
 //------------
@@ -135,8 +151,8 @@ body {
   }
   @include breakpoint($desktop) {
     @include span (6 of 12);
-    padding-left: 190px;
-    background: url("img/cuore.png") no-repeat 160px 69%;
+    padding-left: 260px;
+    background: url("img/cuore.png") no-repeat 230px 69%;
   }
 }
 
