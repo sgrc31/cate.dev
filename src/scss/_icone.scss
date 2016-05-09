@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'icone';
-  src: url('fonts/icone.eot?81074570');
-  src: url('fonts/icone.eot?81074570#iefix') format('embedded-opentype'),
-       url('fonts/icone.woff2?81074570') format('woff2'),
-       url('fonts/icone.woff?81074570') format('woff'),
-       url('fonts/icone.ttf?81074570') format('truetype'),
-       url('fonts/icone.svg?81074570#icone') format('svg');
+  src: url('fonts/icone.eot');
+  src: url('fonts/icone.eot') format('embedded-opentype'),
+       url('fonts/icone.woff2') format('woff2'),
+       url('fonts/icone.woff') format('woff'),
+       url('fonts/icone.ttf') format('truetype'),
+       url('fonts/icone.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icone';
-    src: url('../font/icone.svg?81074570#icone') format('svg');
+    src: url('../font/icone.svg?49898426#icone') format('svg');
   }
 }
 */
@@ -58,3 +58,4 @@
 .icon-facebook-rect:before { content: '\e800'; } /* '' */
 .icon-tumblr-rect:before { content: '\e801'; } /* '' */
 .icon-twitter-bird:before { content: '\e802'; } /* '' */
+.icon-menu:before { content: '\e803'; } /* '' */
