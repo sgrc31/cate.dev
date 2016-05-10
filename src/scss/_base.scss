@@ -71,7 +71,7 @@ body {
   text-align: center;
   font-size: smaller;
   font-weight: bold;
-//  overflow: scroll;
+  margin-bottom: 30px;
 }
 
 .logo__subtitle span {
@@ -165,4 +165,12 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+
+//----------------
+// INDEX
+//---------------
+.home__slider {
+  margin-bottom: -30px;
 }

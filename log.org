@@ -2,7 +2,8 @@
 
 * TODO impara magit???
 
-* TODO sistema navigazione per mobile
+* DONE sistema navigazione per mobile
+  CLOSED: [2016-05-09 Mon 17:07]
 
 * DONE trova modo di evitare lo scroll della navigazione su a about e index
   CLOSED: [2016-05-07 Sat 12:17]
