@@ -4,3 +4,6 @@ dist
 *~
 npm-debug.log
 src/misc/Logo.psd
+src/img
+src/misc
+src/fonts
