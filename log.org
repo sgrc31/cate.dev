@@ -9,3 +9,22 @@
   CLOSED: [2016-05-07 Sat 12:17]
 
 * TODO crea uno script di build esaustivo
+
+* domande da fare a cate
+
+** situazione browser
+
+** focus su versione web
+   
+** fashion
+- la larghezza delle immagini va bene?
+  
+** about
+- i titoletti vanno bene o li preferisce come il resto del testo
+
+** slide
+- come ci regoliamo con le immagini, fermo restando che voglio un'altezza fissa?
+
+** misc
+la grandezza del carattere va bene?
+la grandezza del logo va bene?

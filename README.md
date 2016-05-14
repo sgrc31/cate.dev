@@ -1,0 +1,1 @@
+Rework per www.caterinagiliphotography.com

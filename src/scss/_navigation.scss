@@ -112,8 +112,8 @@
   color: $colore-testo;
   text-decoration: none;
   font-variant: small-caps;
-  //text-transform: uppercase;
-  font-family: 'LatoRegular', Arial, sans-serif;
+  font-weight: bold;
+  font-family: 'Optima', Arial, sans-serif;
   padding: 10px;
 }
 
@@ -148,7 +148,7 @@
 .nav__link:hover:after {
   @include breakpoint($desktop) {
     width: 100%;
-    background: #888;
+    background: $colore-testo;
   }
 }
 

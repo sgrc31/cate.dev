@@ -8,13 +8,27 @@ html {
 }
 
 @font-face {
-  font-family: 'LatoLight';
-  src: url('fonts/Lato-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-family: 'Optima';
+  src: url('fonts/Optima-Bold.eot');
+  src: url('fonts/Optima-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Optima-Bold.woff2') format('woff2'),
+       url('fonts/Optima-Bold.woff') format('woff'),
+       url('fonts/Optima-Bold.ttf') format('truetype'),
+       url('fonts/Optima-Bold.svg#Optima-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "LatoRegular";
-  src: url("fonts/Lato-Regular.ttf") format("truetype");
+  font-family: 'Optima';
+  src: url('fonts/Optima-Regular.eot');
+  src: url('fonts/Optima-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Optima-Regular.woff2') format('woff2'),
+       url('fonts/Optima-Regular.woff') format('woff'),
+       url('fonts/Optima-Regular.ttf') format('truetype'),
+       url('fonts/Optima-Regular.svg#Optima-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .cf:before,
@@ -28,10 +42,8 @@ html {
 }
 
 body {
-  font-family: 'LatoLight', Arial, sans-serif;
-//  display: flex;
-//  min-height: 100vh;
-//  flex-direction: column;
+  font-family: 'Optima', Arial, sans-serif;
+  color: $colore-testo;
 }
 
 .wrapper {
@@ -123,6 +135,11 @@ body {
   margin: 0 auto 45px auto;
 }
 
+.img__slide {
+  margin: 30px auto;
+}
+
+
 
 
 
@@ -152,7 +169,9 @@ body {
   @include breakpoint($desktop) {
     @include span (6 of 12);
     padding-left: 260px;
-    background: url("img/cuore.png") no-repeat 230px 69%;
+    padding-bottom: 5px;
+    background: url("img/cuore.png") no-repeat 230px 0px;
+    font-size: 1em;
   }
 }
 
