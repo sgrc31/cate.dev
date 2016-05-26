@@ -46,6 +46,15 @@ body {
   color: $colore-testo;
 }
 
+.preloader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: white url('img/balls.gif') no-repeat center center;
+  z-index: 9999;
+}
+
+
 .wrapper {
   display: flex;
   min-height: 100vh;
@@ -65,9 +74,7 @@ body {
 }
 
 .logo__img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  margin: 30px auto 40px auto;
 }
 
 .logo__hr {
@@ -165,10 +172,12 @@ body {
   color: $colore-testo;
   text-align: center;
   font-weight: normal;
-  background: url("img/cuore.png") no-repeat 30px 69%;
+  text-decoration: underline;
+  background: url("img/cuore.png") no-repeat 120px 69%;
   @include breakpoint($tablet) {
     @include span(6 of 12);
     text-align: left;
+    text-decoration: none;
     padding-left: 25px;
     background: url("img/cuore.png") no-repeat 5px 69%;
   }
