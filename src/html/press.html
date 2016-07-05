@@ -12,7 +12,6 @@
     <meta property="og:image" content="http://www.caterinagiliphotography.com/img/fb.jpg">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
@@ -20,37 +19,10 @@
     <script src="js/lazysizes.min.js"></script>
   </head>
   <body>
-    <!--[if lt IE 8]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
-    <!-- Add your site or application content here -->
+    <div class="preloader"></div>
     <div class="wrapper">
 
-     <!-- 
-      <div class="nav__trigger">
-        menu
-      </div>
-      <ul class="nav">
-        <li class="nav__item"><a class="nav__link" href="">home</a></li>
-        <li class="nav__item dropdown__trigger">
-          <a class="nav__link" href="">shots</a>
-          <ul class="dropdown__area">
-            <li class="dropdown__item"><a class="dropdown__link" href="">fashion & beauty</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">commercial</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">love</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">celebrities</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">on stage</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">music</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">portrait</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">inspiration</a></li>
-            <li class="dropdown__item"><a class="dropdown__link" href="">products</a></li>
-          </ul>
-        </li>
-        <li class="nav__item"><a class="nav__link" href="">about</a></li>
-      </ul> -->
-
-      
       <div class="content">
         <img src="img/logo.png" srcset="img/logo.png 800w, img/logo-495.png 495w" sizes="(min-width: 800px) 800px, 100vw" alt="logo" class="logo__img img--fluid"/>
 
@@ -110,6 +82,12 @@
       ga('create', 'UA-78165910-1', 'auto');
       ga('send', 'pageview');
 
+    </script>
+
+    <script>
+     $(window).load(function() {
+         $('.preloader').delay(350).fadeOut(250)
+     });
     </script>
 
 
